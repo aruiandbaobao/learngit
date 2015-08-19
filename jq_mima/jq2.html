@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <SCRIPT LANGUAGE="JavaScript">
+<!--Hide
+function goForit() {
+  var location;
+  var password;
+  password=this.document.testform.inputbox.value
+  location="Person.html"
+  fetch(location)
+  theKeeper=window.close()
+}
+function fetch(location) {
+  var root;
+  if (opener.closed) {root=window.open('','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,copyhistory=no');
+    root.location.href = location;
+  } else {
+    opener.location.href = location;
+  }
+}
+//-->
+</SCRIPT>
+
+        <body>
+        	<CENTER>
+<FONT SIZE=3>输入密码，然后按submit进入密码页</FONT>
+<FORM NAME="testform">
+<INPUT TYPE="text" NAME="inputbox" VALUE="" size=20>
+<INPUT TYPE="button" NAME="button" Value="Submit" onClick="goForit(this.form)"></FORM>
+</FONT><p>
+密码为：time1
+</CENTER>
+
+        </body>
+    </head>
+</html>
