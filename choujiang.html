@@ -12,7 +12,7 @@ DaysToAdd=document.form.DaysToAdd.value;
 
 var now=new Date();
 var newdate=new Date();
-var newtimems=newdate.getTime()+((DaysToAdd+2)*24*60*60*100);
+var newtimems=newdate.getTime()+((DaysToAdd+2)*24*60*60*1000)/10;
 newdate.setTime(newtimems);
 document.form.display.value=newdate.toLocaleString();
 }
